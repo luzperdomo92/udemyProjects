@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop II</title>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="#home" class="scroll">
+      <div id="logo"></div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home" class="scroll">Home</a></li>
+        <li><a href="#temas" class="scroll">Temas</a></li>
+        <li><a href="#galeria" class="scroll">Galeria</a></li>
+        <li><a href="#contacto" class="scroll">Contactenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <video autoplay loop preload="auto">
+      <source src="videos/video.mp4" type="video/mp4">
+      <source src="videos/video.ogv" type="video/ogv">
+      <source src="videos/video.webm" type="video/webm">
+      Tu navegador no soporta el tag de video.
+    </video>
+    <section id="home">
+      <div id="globo"></div>
+      <h2>Welcome to the Workshop II of <span>HTML5 & CCS3</span></h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vitae delectus aspernatur quis iusto beatae eos quos, quaerat mollitia consequuntur unde expedita, error, exercitationem vel omnis minima blanditiis reprehenderit voluptate?</p>
+      <a href="#temas" class="scroll">Click here!</a>
+      <div id="abajo"></div>
+    </section>
+
+    <section id="temas">
+      <h3>Temas</h3>
+      <article>
+        <div id="imagen1"></div>
+        <h4> Subtitulo nivel 4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Qui minima amet velit dignissimos nam veritatis labore quibusdam ad eos ipsum doloribus veniam inventore, quia rerum ea tempore rem quo ipsa.</p>
+        <a href="#" class="scroll">Read more</a>
+        <div id="imagen2"></div>
+        <h4> Subtitulo nivel 4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Qui minima amet velit dignissimos nam veritatis labore quibusdam ad eos ipsum doloribus veniam inventore, quia rerum ea tempore rem quo ipsa.</p>
+        <a href="#" class="scroll">Read more</a>
+        <div id="imagen3"></div>
+        <h4> Subtitulo nivel 4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Qui minima amet velit dignissimos nam veritatis labore quibusdam ad eos ipsum doloribus veniam inventore, quia rerum ea tempore rem quo ipsa.</p>
+        <a href="#" class="scroll">Read more</a>
+      </article>
+    </section>
+
+    <section id="galeria">
+      <h3>Galery</h3>
+      <div id="fotos">
+        <a href="#" title="Imagen1"><img src="img/1.jpg" alt="Imagen1"></a>
+        <a href="#" title="Imagen2"><img src="img/2.jpg" alt="Imagen2"></a>
+        <a href="#" title="Imagen3"><img src="img/3.jpg" alt="Imagen3"></a>
+        <a href="#" title="Imagen4"><img src="img/4.jpg" alt="Imagen4"></a>
+        <a href="#" title="Imagen5"><img src="img/5.jpg" alt="Imagen5"></a>
+        <a href="#" title="Imagen6"><img src="img/6.jpg" alt="Imagen6"></a>
+        <a href="#" title="Imagen7"><img src="img/7.jpg" alt="Imagen7"></a>
+        <a href="#" title="Imagen8"><img src="img/8.jpg" alt="Imagen8"></a>
+        <a href="#" title="Imagen9"><img src="img/9.jpg" alt="Imagen9"></a>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h3>Contactanos</h3>
+      <div id="formulario">
+        <form action="#" method="post">
+          <input type="text" name="nombre"  placeholder="Nombre" required>
+          <input type="email" name="email"  placeholder="Email" required>
+          <input type="tel" name="telefono" placeholder="Telefono" pattern="[0-9]{3}\s[0-9]{3}/s[0-9]{4}$" title="Debe de ser un numero telefonico con la estructura xxx xxx xxxx, teniendo en cuenta los espacios" required>
+          <textarea name="mensaje"  cols="30" rows="10" placeholder="Mensaje"></textarea>
+          <input type="submit" value="Enviar datos">
+        </form>
+      </div>
+      <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15666.598913573633!2d-74.81561945!3d10.9897893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sco!4v1614285586729!5m2!1sen!2sco" width="400" height="300" loading="lazy"></iframe>
+      </div>
+      <a href="#contenido" class="scroll arriba"></a>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2021 Luz Perdomo -Todos los derechos reservados</p>
+    </footer>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="js/modernizr.js"></script>
+  <script src="js/prefixfree.js"></script> -->
+  <script src="js/scrollomatic.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a.scroll").scrollomatic();
+    });
+  </script>
+</body>
+</html>
